@@ -279,7 +279,7 @@ def mock_vector_store():
 
     async def fake_search(self, vector, limit):
         results: list[RetrievalResult] = []
-        for i, entry in enumerate(list(storage.items())[:limit]):
+        for i, (_chunk_id, entry) in enumerate(list(storage.items())[:limit]):
             p = entry["payload"]
             results.append(
                 RetrievalResult(

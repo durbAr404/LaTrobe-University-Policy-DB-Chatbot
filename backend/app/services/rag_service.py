@@ -1,7 +1,6 @@
 """End-to-end RAG orchestration."""
 
 import logging
-import re
 from collections.abc import Sequence
 
 from sqlalchemy.ext.asyncio import AsyncSession

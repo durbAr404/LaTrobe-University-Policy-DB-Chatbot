@@ -19,7 +19,7 @@ No other module needs to change.
 
 from __future__ import annotations
 
-import asyncio
+#import asyncio
 import logging
 
 from app.core.config import get_settings

@@ -29,7 +29,6 @@ from __future__ import annotations
 import asyncio
 import logging
 import os
-from pathlib import Path
 
 from app.core.config import get_settings
 from app.core.exceptions import RetrievalError

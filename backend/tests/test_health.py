@@ -11,7 +11,7 @@ async def test_health_endpoint_returns_ok(test_client):
     assert response.status_code == 200
     body = response.json()
     assert body["status"] == "ok"
-    assert body["service"] == "policy-db-chatbot"
+    assert body["service"] == "ask-latrobe-policy-db-chatbot"
 
 
 @pytest.mark.asyncio
